@@ -26,14 +26,17 @@ li {
 }
 
 .deletes{
-
- /*Step 2: Basic Button Styles*/
+background-image:url("images/skull.jpg")
  display: block;
  height: 20px;
  width: 50px;
- background: red;
- border: 2px solid rgba(33, 68, 72, 0.59);
- font-size: 15
+ color: #000000;
+
+ font: red;
+  cursor: pointer;
+  font-weight: bold;
+  padding-bottom: 2px;
+
 
  }
 
@@ -41,9 +44,9 @@ li {
   display: block;
   height: 20px;
   width: 50px;
-  background: yellow;
-  border: 2px solid rgba(33, 68, 72, 0.59);
+  background: white;
   font-size: 15
+  padding-bottom: 2px;
 
   }
 }
