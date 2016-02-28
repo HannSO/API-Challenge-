@@ -3,7 +3,7 @@ createData = function() {
   var xmlhttp = new XMLHttpRequest();
   var url = '/json/create';
   var userInput = document.getElementById('message_box').value;
-  xmlhttp.open("POST", url, true);
+  xmlhttp.open("POST", url, false);
   xmlhttp.send(userInput);
   document.getElementById('message_box').value = "";
   displayMessagesNil();
@@ -37,7 +37,7 @@ updateData = function(messageId) {
       getData();
       }
     };
-  xmlhttp.open("POST", url, true);
+  xmlhttp.open("POST", url, false);
   xmlhttp.send(jsOwned);
 };
 
@@ -45,10 +45,8 @@ updateData = function(messageId) {
 deleteData = function(messageId) {
   var xmlhttp = new XMLHttpRequest();
   var url = '/json/delete';
-  console.log('delete Data');
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      console.log("We're in a ready state!!!");
       displayMessagesNil();
       getData();
       }
@@ -61,7 +59,6 @@ deleteData = function(messageId) {
 
 
 createButtonListener = function() {
-  console.log('inside create listener');
   var edit = document.getElementById('submit_message');
   edit.addEventListener("click", createData);
 };
@@ -76,9 +73,7 @@ editButtonListener = function() {
 };
 
 deleteButtonListener = function() {
-  console.log('inside delete listener');
   deleteButtonList = document.getElementsByClassName('deletes');
-  console.log(deleteButtonList);
   for(i=0; i<deleteButtonList.length; i++) {
     deleteButtonList[i].addEventListener("click", function() {
       deleteData(this.id);

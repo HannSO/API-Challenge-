@@ -1,10 +1,49 @@
+
+
 body {
-    background-color: blue;
+    background-color: white;
     text-align: center;
+    font-family: 'Metrophobic', serif;
+    font-size: 30px
 }
+
+#title {
+  font-size: 50px
+
+}
+
 
 #all_messages {
   display: -ms-grid;
-display: grid;
-list-style-type: none
+  display: grid;
+  list-style-type: none
+
+}
+
+li {
+  margin: 5px;
+  padding: 5px;
+}
+
+.deletes{
+
+ /*Step 2: Basic Button Styles*/
+ display: block;
+ height: 20px;
+ width: 50px;
+ background: red;
+ border: 2px solid rgba(33, 68, 72, 0.59);
+ font-size: 15
+
+ }
+
+.edits{
+  display: block;
+  height: 20px;
+  width: 50px;
+  background: yellow;
+  border: 2px solid rgba(33, 68, 72, 0.59);
+  font-size: 15
+
+  }
 }
