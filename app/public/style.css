@@ -1,52 +1,101 @@
 
 
 body {
-    background-color: white;
+    background: url("img/redwater.jpg");
     text-align: center;
     font-family: 'Metrophobic', serif;
-    font-size: 30px
+    font-size: 18px;
+    font-weight: bold;
+    font: #300000;
+}
+
+body#title{
+  font-size: 50px;
+  font-stretch: expanded;
+  font: #303030;
+  font-weight: bolder;
+
 }
 
 #title {
   font-size: 50px
-
 }
-
 
 #all_messages {
   display: -ms-grid;
   display: grid;
-  list-style-type: none
-
+  list-style-type: none;
+  font: #300000;
+}
+#message_box{
+  background-color: #900000;
+  border-color: #900000;
+  opacity: 0.5;
 }
 
+
+
+#submit_message{
+  font-size: 18px;
+  display: inline-block;
+
+  height: 30px;
+  width: 50px;
+  color: #900000;
+  opacity: 0.5;
+
+  font: black;
+  cursor: pointer;
+  font-weight: bold;
+  padding-bottom: 2px;
+
+}
 li {
   margin: 5px;
   padding: 5px;
 }
 
 .deletes{
-background-image:url("images/skull.jpg")
+  font-size: 18px;
+  float: right;;
  display: block;
- height: 20px;
+ height: 30px;
  width: 50px;
- color: #000000;
+ color: #900000;
+ opacity: 0.5;
 
- font: red;
-  cursor: pointer;
+ font: black;
+ cursor: pointer;
   font-weight: bold;
   padding-bottom: 2px;
-
-
+  position: relative;
  }
 
 .edits{
+  font-size: 18px;
+  float: right;
   display: block;
-  height: 20px;
+  height: 30px;
   width: 50px;
-  background: white;
-  font-size: 15
-  padding-bottom: 2px;
+  color: #900000;
+  opacity: 0.5;
 
+  font: black;
+  cursor: pointer;
+   font-weight: bold;
+   padding-bottom: 2px;
+   position: relative;
   }
+}
+
+.deletes:hover button {
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.edits:hover button {
+  opacity: 1;
+  background-color: black;
+  color: white;
 }
