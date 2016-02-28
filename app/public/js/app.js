@@ -53,8 +53,6 @@ deleteData = function(messageId) {
     };
     xmlhttp.open("POST", url, true);
     xmlhttp.send(messageId);
-    displayMessagesNil();
-    getData();
 };
 
 
